@@ -1,0 +1,9 @@
+@import "listItem.wxss";
+
+.title-tab{
+  height: 100rpx;
+  width: 100%;
+}
+.list-swiper{
+  min-height: 400rpx
+}

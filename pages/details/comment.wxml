@@ -1,0 +1,12 @@
+<template name='comment'>
+  <view class='comment-item'>
+    <image src='{{item.author.avatar_url}}'></image>
+    <view class='info'>
+      <view class='author'>
+        <text>{{item.author.loginname}}<text>11楼·3个月前</text> </text>
+        <text>{{item.ups.length}} 👍</text>
+      </view>
+      <view>{{item.content}}</view>
+    </view>
+  </view>
+</template>

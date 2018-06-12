@@ -1,0 +1,23 @@
+<template name='listItem'>
+  <view class='listItem' bindtap='gotoDetails' data-item-id='{{item.id}}'>
+    <view>
+      <text class='tab' wx:if="{{item.tab == 'share'}}">分享</text>
+      <text class='tab' wx:if="{{item.tab == 'job'}}">求职</text>
+      <text class='tab good' wx:if="{{item.tab == 'good'}}">精华</text>
+      <text class='tab' wx:if="{{item.tab == 'ask'}}">问答</text>
+      <text class='title'>{{item.title}}</text>
+    </view>
+    <view class='detail'>
+      <view class='auth-info'>
+        <image class='avatar' src='{{item.author.avatar_url}}'></image>
+        <view class='time'>
+          <text>{{item.author.loginname}}</text>
+          <text>{{item.create_at}}</text>
+        </view>
+      </view>
+      <view>
+        <text>{{item.reply_count}}/{{item.visit_count}}</text>
+      </view>
+    </view>
+  </view>
+</template>

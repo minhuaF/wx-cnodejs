@@ -1,0 +1,28 @@
+<import src="../../wxParse/wxParse.wxml" />
+<import src='./comment.wxml' />
+
+
+<scroll-view scroll-y id='details'>
+  <view class='details-content'>
+    <view class='header'>
+      <view>
+        <text class='tab' wx:if="{{contentInfo.tab == 'share'}}">分享</text>
+        <text class='tab' wx:if="{{contentInfo.tab == 'job'}}">求职</text>
+        <text class='tab good' wx:if="{{contentInfo.tab == 'good'}}">精华</text>
+        <text class='tab' wx:if="{{contentInfo.tab == 'ask'}}">问答</text>
+        <text class='title'>{{contentInfo.title}}</text>
+      </view>
+      <view class='info' wx:if="{{contentInfo}}">
+        <text>{{contentInfo.author.loginname}}</text>
+        <text>{{contentInfo.create_at}}</text>
+        <text>{{contentInfo.visit_count}}次浏览</text>
+      </view>
+    </view>
+    <view class='content'>
+      <template is="wxParse" data="{{wxParseData:content.nodes}}" />
+    </view>
+  </view>
+  <view class='details-comment' wx:for='{{comment}}' wx:for-index="index" wx:for-item="item" wx:key="index">
+    <template is='comment' data="{{item}}"></template>
+  </view>
+</scroll-view>

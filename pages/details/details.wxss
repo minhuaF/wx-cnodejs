@@ -1,0 +1,47 @@
+@import './comment.wxss';
+
+#details {
+  background: #f6f6f6;
+  height: 100vh
+}
+.details-content {
+  background: #fff;
+  padding: 16rpx;
+  padding-bottom: 24px
+}
+.details-content .header{
+  font-size: 24rpx
+}
+.details-content .title{
+  font-size: 34rpx;
+  font-weight: 600;
+}
+.details-content .tab {
+  background: #e5e5e5;
+  padding: 5rpx 10rpx;
+  margin-right: 10rpx;
+  color: #999;
+  border-radius: 15rpx;
+}
+.details-content .tab.good {
+  background: #80bd01;
+  color: #fff
+}
+.details-content .info{
+  margin: 20rpx 0;
+}
+.details-content .info>text{
+  margin-right: 15rpx ;
+}
+
+.details-content .content{
+  font-size: 30rpx;
+  margin-top: 25rpx;
+  line-height: 48rpx;
+  color: #333;
+  text-align:justify;
+}
+
+.details-comment{
+  background: #f6f6f6;
+}

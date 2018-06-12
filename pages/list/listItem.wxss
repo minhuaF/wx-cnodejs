@@ -1,0 +1,52 @@
+.listItem {
+  font-size: 26rpx;
+  border-bottom: 1rpx solid #d5dbdb;
+  padding: 18rpx 15rpx 5rpx 20rpx;
+}
+
+.listItem .tab {
+  background: #e5e5e5;
+  padding: 5rpx 10rpx;
+  margin-right: 10rpx;
+  color: #999;
+  border-radius: 15rpx;
+}
+
+.listItem .tab.good{
+  background: #80bd01;
+  color: #fff
+}
+
+.listItem .title {
+  font-size: 30rpx;
+  font-weight: 600;
+  width: 540rpx;
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.listItem .detail {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.listItem .auth-info {
+  display: flex;
+  align-items: center;
+}
+
+.listItem .avatar {
+  height: 80rpx;
+  width: 80rpx;
+  border-radius: 50%;
+  background: #d5dbdb;
+  margin: 10rpx;
+}
+
+.listItem .time > text {
+  display: block;
+}

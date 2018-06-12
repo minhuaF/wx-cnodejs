@@ -1,0 +1,9 @@
+<template>
+  <ul>
+    <li>全部</li>
+    <li>精华</li>
+    <li>问答</li>
+    <li>分享</li>
+    <li>求职</li>
+  </ul>
+</template>

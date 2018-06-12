@@ -1,0 +1,12 @@
+<import src='listItem.wxml' />
+
+<!-- <view class='title-tab'>
+  <view wx:for="{{tabTitles}}" wx:for-index='index' wx:for-item='item' wx:key='index'>
+    <text class="title-item">{{item}}</text>
+  </view>
+</view> -->
+<view class='list-swiper'>
+  <view wx:for="{{list}}">
+    <template is='listItem' data="{{item}}"></template>
+  </view>
+</view>
